@@ -1,73 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Romadoro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romadoro | Launching Soon</title>
+  <meta name="description" content="Romadoro is a luxury jewelry brand launching soon." />
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0c0c0c;
-      color: white;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #070707 0%, #111111 100%);
+      color: #f5f1e8;
+      min-height: 100vh;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
       text-align: center;
     }
-    header {
-      padding: 40px;
-      font-size: 32px;
-      letter-spacing: 3px;
-      color: gold;
+
+    .brand {
+      font-size: 14px;
+      letter-spacing: 6px;
+      color: #c9a24a;
+      margin-bottom: 24px;
+      text-transform: uppercase;
     }
-    .hero {
-      padding: 60px 20px;
+
+    h1 {
+      font-size: clamp(38px, 7vw, 82px);
+      letter-spacing: 4px;
+      font-weight: 600;
+      margin-bottom: 18px;
     }
-    .product {
-      background: #1a1a1a;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 10px;
+
+    .subtitle {
+      font-size: clamp(18px, 2.2vw, 26px);
+      color: #d8c08a;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      max-width: 680px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #ddd6c8;
+      margin-bottom: 36px;
+    }
+
+    .badge {
       display: inline-block;
-      width: 250px;
+      border: 1px solid #c9a24a;
+      color: #c9a24a;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 48px;
     }
-    .price {
-      color: gold;
-      font-size: 18px;
+
+    .box {
+      width: 100%;
+      max-width: 760px;
+      border: 1px solid rgba(201, 162, 74, 0.35);
+      background: rgba(255, 255, 255, 0.03);
+      padding: 28px 22px;
+      border-radius: 18px;
+      backdrop-filter: blur(4px);
     }
-    button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: gold;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
+
+    .box-title {
+      color: #c9a24a;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .box p {
+      color: #e8e0d2;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #9b927f;
+    }
+
+    .footer a {
+      color: #d8c08a;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .wrapper {
+        padding: 30px 16px;
+      }
+
+      .box {
+        padding: 22px 18px;
+      }
     }
   </style>
 </head>
-
 <body>
+  <div class="wrapper">
+    <div class="brand">Romadoro</div>
 
-<header>ROMADORO</header>
+    <h1>Luxury Jewelry</h1>
+    <div class="subtitle">Launching Soon</div>
 
-<div class="hero">
-  <h1>Luxury Gold Jewelry</h1>
-  <p>Timeless elegance. Crafted to shine.</p>
-</div>
+    <p class="text">
+      Romadoro is a modern jewelry brand focused on timeless elegance, refined design,
+      and a premium shopping experience. Our collection is being prepared with care and will be revealed soon.
+    </p>
 
-<div class="product">
-  <h3>Gold Necklace</h3>
-  <p class="price">$499</p>
-  <button>Buy Now</button>
-</div>
+    <div class="badge">Coming Soon</div>
 
-<div class="product">
-  <h3>Gold Bracelet</h3>
-  <p class="price">$299</p>
-  <button>Buy Now</button>
-</div>
+    <div class="box">
+      <div class="box-title">About the Brand</div>
+      <p>
+        Discover a world of elevated jewelry style inspired by classic beauty and contemporary sophistication.
+        Romadoro is being built to offer a polished, luxurious destination for customers who appreciate
+        distinctive pieces and elegant presentation.
+      </p>
+    </div>
 
-<div class="product">
-  <h3>Gold Earrings</h3>
-  <p class="price">$199</p>
-  <button>Buy Now</button>
-</div>
-
+    <div class="footer">
+      © 2026 Romadoro. All rights reserved.
+    </div>
+  </div>
 </body>
 </html>
