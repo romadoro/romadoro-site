@@ -37,7 +37,6 @@
       overflow-x: hidden;
     }
 
-    /* ── NOISE OVERLAY ── */
     body::before {
       content: '';
       position: fixed;
@@ -48,7 +47,6 @@
       opacity: 0.4;
     }
 
-    /* ── RADIAL GLOW ── */
     body::after {
       content: '';
       position: fixed;
@@ -58,7 +56,6 @@
       z-index: 0;
     }
 
-    /* ── HEADER ── */
     header {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -89,7 +86,6 @@
       color: var(--gold-light);
     }
 
-    /* ── HERO ── */
     .hero {
       position: relative;
       z-index: 1;
@@ -163,7 +159,6 @@
       animation: fadeUp 1s ease 0.8s forwards;
     }
 
-    /* ── EMAIL FORM ── */
     .waitlist {
       width: 100%;
       max-width: 480px;
@@ -248,7 +243,6 @@
       text-align: center;
     }
 
-    /* ── INSTAGRAM CTA ── */
     .instagram-cta {
       margin-top: 56px;
       opacity: 0;
@@ -281,7 +275,6 @@
       transition: stroke 0.3s;
     }
 
-    /* ── SCROLL INDICATOR ── */
     .scroll-hint {
       position: absolute;
       bottom: 36px;
@@ -310,7 +303,6 @@
       animation: scrollPulse 2s ease-in-out infinite;
     }
 
-    /* ── STORY SECTION ── */
     .story {
       position: relative;
       z-index: 1;
@@ -373,7 +365,6 @@
       transform: rotate(45deg);
     }
 
-    /* ── FOOTER ── */
     footer {
       position: relative;
       z-index: 1;
@@ -416,7 +407,6 @@
       color: rgba(245,240,232,0.18);
     }
 
-    /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(22px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -429,10 +419,9 @@
 
     @keyframes scrollPulse {
       0%, 100% { transform: scaleY(1); opacity: 0.5; }
-      50%       { transform: scaleY(1.3); opacity: 1; }
+      50% { transform: scaleY(1.3); opacity: 1; }
     }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       header { padding: 20px 24px; }
 
@@ -450,12 +439,10 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <a href="/" class="logo">Roma <span>d'Oro</span></a>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <p class="hero-eyebrow">Gold Jewelry Collection</p>
 
@@ -470,7 +457,6 @@
       Every piece designed to be worn, treasured, and passed on.
     </p>
 
-    <!-- EMAIL WAITLIST -->
     <div class="waitlist">
       <p class="waitlist-label">Be the first to know</p>
 
@@ -489,7 +475,6 @@
       <p class="success-msg" id="successMsg">Thank you — we'll be in touch. ✦</p>
     </div>
 
-    <!-- INSTAGRAM -->
     <div class="instagram-cta">
       <a href="https://instagram.com/theromadoro" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24">
@@ -507,7 +492,6 @@
     </div>
   </section>
 
-  <!-- STORY -->
   <section class="story">
     <p class="section-label">Our Story</p>
     <h2 class="story-title">Where Rome Meets Gold</h2>
@@ -532,20 +516,18 @@
     </p>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-logo">Roma d'Oro</div>
 
     <nav class="footer-links">
       <a href="https://instagram.com/theromadoro" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="mailto:hello@romadoro.com">Contact</a>
+      <a href="mailto:info@romadoro.com">Contact</a>
     </nav>
 
     <p class="footer-copy">© 2026 Roma d'Oro. All rights reserved.</p>
   </footer>
 
   <script>
-    // Waitlist form handling
     const form = document.getElementById('waitlistForm');
     const successMsg = document.getElementById('successMsg');
 
@@ -571,7 +553,6 @@
       }
     });
 
-    // Fade in story section on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(el => {
         if (el.isIntersecting) {
